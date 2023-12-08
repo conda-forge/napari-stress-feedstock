@@ -24,7 +24,7 @@ requirements:
     - dask-core
     - distributed
     - joblib
-    - magicgui
+    - magicgui <=0.8.0  # Imported but not listed as a requirement
     - matplotlib-base
     - mpmath
     - napari
