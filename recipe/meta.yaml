@@ -1,5 +1,5 @@
 {% set name = "napari-stress" %}
-{% set version = "0.2.8" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_stress-{{ version }}.tar.gz
-  sha256: f7553a03e59b84519ce7abe9d4238500ee6d239469f6157685401fce0aa974d3
+  sha256: 4f80139caaae4bd8e8ede80fe179b1d34550f7ff353417bb62ccae29c1c937d9
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - matplotlib-base
     - mpmath
     - napari
-    - napari-matplotlib >=1.1.0 
+    - napari-matplotlib >=1.1.0
     - napari-process-points-and-surfaces >=0.4.0
     - napari-segment-blobs-and-things-with-membranes
     - napari-tools-menu >=0.1.15
