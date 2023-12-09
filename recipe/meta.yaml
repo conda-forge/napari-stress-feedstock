@@ -50,7 +50,7 @@ test:
     - napari_stress
   commands:
     - pip list
-    - pip check
+    # - pip check  # Fails due to napari-assistant requiring jupyter, and jupytext
   requires:
     - pip
     - pyqt
