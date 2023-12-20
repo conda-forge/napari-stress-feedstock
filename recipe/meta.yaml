@@ -1,5 +1,5 @@
 {% set name = "napari-stress" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_stress-{{ version }}.tar.gz
-  sha256: 4f80139caaae4bd8e8ede80fe179b1d34550f7ff353417bb62ccae29c1c937d9
+  sha256: 91e3a425433de596879495187e716d10b2eac50657ff6e70acb2c96231be6422
 
 build:
   noarch: python
