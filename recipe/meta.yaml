@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_stress-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_stress-{{ version }}.tar.gz
   sha256: 2a5da5afd34d6dfb72ba77e37f60f2bc67b660641a5c7103ef4855a077fbd6c2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
     - wheel
   run:
@@ -36,7 +36,7 @@ requirements:
     - pandas
     - pygeodesic
     - pyocclient
-    - python >=3.7
+    - python >={{ python_min }}
     - pyshtools <=4.10.0
     - scikit-image
     - scipy
@@ -54,6 +54,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-stress
